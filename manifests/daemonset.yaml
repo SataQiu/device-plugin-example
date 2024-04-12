@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: device-plugin-example
+  namespace: kube-system
+spec:
+  selector:
+    matchLabels:
+      name: device-plugin-example
+  template:
+    metadata:
+      labels:
+        name: device-plugin-example
+    spec:
+      containers:
+      - image: shidaqiu/device-plugin-example:v0.1
+        name: device-plugin-example
+        imagePullPolicy: IfNotPresent
+        volumeMounts:
+        - name: kubelet
+          mountPath: /var/lib/kubelet
+      volumes:
+      - name: kubelet
+        hostPath:
+          path: /var/lib/kubelet
