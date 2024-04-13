@@ -1,6 +1,6 @@
 # A simple example for Kubernetes Device Plugin
 
-Blog: 
+Blog: https://blog.csdn.net/shida_csdn/article/details/137683216
 
 ## Build Image
 

@@ -1,0 +1,123 @@
+cdiVersion: 0.5.0
+kind: device.example.com/gpu
+devices:
+  - name: device_0
+    containerEdits:
+      deviceNodes:
+        - hostPath: /dev/mock/device_0
+          path: /dev/mock/device_0
+          type: c
+          permissions: rw
+      mounts:
+        - hostPath: /mock/lib/device_0.so
+          containerPath: /mock/lib/device_0.so
+          options:
+            - ro
+            - nosuid
+            - nodev
+            - bind
+  - name: device_1
+    containerEdits:
+      deviceNodes:
+        - hostPath: /dev/mock/device_1
+          path: /dev/mock/device_1
+          type: c
+          permissions: rw
+      mounts:
+        - hostPath: /mock/lib/device_1.so
+          containerPath: /mock/lib/device_1.so
+          options:
+            - ro
+            - nosuid
+            - nodev
+            - bind
+  - name: device_2
+    containerEdits:
+      deviceNodes:
+        - hostPath: /dev/mock/device_2
+          path: /dev/mock/device_2
+          type: c
+          permissions: rw
+      mounts:
+        - hostPath: /mock/lib/device_2.so
+          containerPath: /mock/lib/device_2.so
+          options:
+            - ro
+            - nosuid
+            - nodev
+            - bind
+  - name: device_3
+    containerEdits:
+      deviceNodes:
+        - hostPath: /dev/mock/device_3
+          path: /dev/mock/device_3
+          type: c
+          permissions: rw
+      mounts:
+        - hostPath: /mock/lib/device_3.so
+          containerPath: /mock/lib/device_3.so
+          options:
+            - ro
+            - nosuid
+            - nodev
+            - bind
+  - name: device_4
+    containerEdits:
+      deviceNodes:
+        - hostPath: /dev/mock/device_4
+          path: /dev/mock/device_4
+          type: c
+          permissions: rw
+      mounts:
+        - hostPath: /mock/lib/device_4.so
+          containerPath: /mock/lib/device_4.so
+          options:
+            - ro
+            - nosuid
+            - nodev
+            - bind
+  - name: device_5
+    containerEdits:
+      deviceNodes:
+        - hostPath: /dev/mock/device_5
+          path: /dev/mock/device_5
+          type: c
+          permissions: rw
+      mounts:
+        - hostPath: /mock/lib/device_5.so
+          containerPath: /mock/lib/device_5.so
+          options:
+            - ro
+            - nosuid
+            - nodev
+            - bind
+  - name: device_6
+    containerEdits:
+      deviceNodes:
+        - hostPath: /dev/mock/device_6
+          path: /dev/mock/device_6
+          type: c
+          permissions: rw
+      mounts:
+        - hostPath: /mock/lib/device_6.so
+          containerPath: /mock/lib/device_6.so
+          options:
+            - ro
+            - nosuid
+            - nodev
+            - bind
+  - name: device_7
+    containerEdits:
+      deviceNodes:
+        - hostPath: /dev/mock/device_7
+          path: /dev/mock/device_7
+          type: c
+          permissions: rw
+      mounts:
+        - hostPath: /mock/lib/device_7.so
+          containerPath: /mock/lib/device_7.so
+          options:
+            - ro
+            - nosuid
+            - nodev
+            - bind

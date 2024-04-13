@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-app-2
+spec:
+  containers:
+  - name: example-app-2
+    image: ubuntu:22.04
+    command: ["sleep"]
+    args: ["infinity"]
+    resources:
+      requests:
+        device.example.com/gpu: "3"
+      limits:
+        device.example.com/gpu: "3"
